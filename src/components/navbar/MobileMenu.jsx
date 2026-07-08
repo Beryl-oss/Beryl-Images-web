@@ -98,8 +98,7 @@ function MobileMenu() {
           border-white/20
           bg-[#111]/80
           px-8
-          py-8
-          opacity-0
+          py-8  
           -translate-y-5
           backdrop-blur-xl
           shadow-xl

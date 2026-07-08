@@ -28,7 +28,7 @@ const navItems = [
           <li key={item.label}>
             <a
               href={item.href}
-              className="text-sm font-semi-bold text-[#264653] transition-colors duration-300 hover:text-orange-500"
+              className="text-sm font-semi-bold text-[#133847] transition-colors duration-300 hover:text-orange-700"
             >
               {item.label}
             </a>
