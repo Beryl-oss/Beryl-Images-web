@@ -57,7 +57,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-3 left-0 z-50 w-full px-5">
+    <header className="fixed top-2 left-0 z-50 w-full px-5">
       <nav
         ref={navRef}
         className="
@@ -71,8 +71,8 @@ function Navbar() {
           border-black/5
           bg-white/50
           px-8
-          py-3
-          backdrop-blur-[10px]
+          py-2
+          backdrop-blur-[20px]
           shadow-sm
         "
       >
