@@ -70,7 +70,7 @@ function Navbar() {
           border
           border-black/5
           bg-white/50
-          px-7
+          px-8
           py-3
           backdrop-blur-[10px]
           shadow-sm

@@ -19,8 +19,9 @@ function Logo({ logoRef }) {
           w-auto
           object-contain
           transition-transform
+          scale-[1.2]
           duration-300
-          hover:scale-[1.03]
+          hover:scale-[1.25]
         "
       />
     </a>

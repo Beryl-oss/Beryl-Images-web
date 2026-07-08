@@ -21,7 +21,9 @@ function HeroImage() {
               className="
                 relative 
                 z-10 
-                w-[520px]"
+                w-[420px]
+                md-[600px]
+                lg:w-[720px]"
             />   
         </div>
     );
