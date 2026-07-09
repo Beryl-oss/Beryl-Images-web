@@ -18,6 +18,9 @@ function Logo({ logoRef }) {
           h-9
           w-auto
           object-contain
+          bg-white/50
+          px-1.5
+          rounded-md
           transition-transform
           scale-[1.2]
           duration-300

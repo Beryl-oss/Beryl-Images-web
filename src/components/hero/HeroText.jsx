@@ -1,35 +1,32 @@
-import HeroButtons from "./HeroButtons";
-import { DotIcon } from "lucide-react";
+import HeroButtons from './HeroButtons';
+import { useLanguage } from '../../context/LanguageContext';
 
 function HeroText() {
-    return (
-        <div className="max-w-xl">
-            <span className="mb-6 inline-block rounded-full bg-[#c2f2f2] px-5 py-2 text-sm font-semibold uppercase tracking-widest text-[#356267]">
-                Design; Photo; Web
-            </span>
-            <h1 className="mb-8 text-xl md:text-3xl lg:text-6xl font-extrabold leading-tight text-slate-900">
-                Des expériences
-                <br />
+  const { t } = useLanguage();
 
-                web sobres qui  
-                <br />
+  return (
+    <div className="w-full max-w-xl text-center sm:text-left">
+      <span className="mb-5 inline-block rounded-full bg-[#c2f2f2] px-4 py-2 text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-[#356267] sm:px-5 sm:text-sm md:text-base">
+        {t.hero.badge}
+      </span>
 
-                mettent votre
-                <br />
+      <h1 className="mb-6 text-4xl font-extrabold leading-[1.05] text-slate-900 sm:text-5xl lg:text-6xl xl:text-7xl">
+        {t.hero.titleLines[0]}
+        <br />
+        {t.hero.titleLines[1]}
+        <br />
+        {t.hero.titleLines[2]}
+        <br />
+        {t.hero.titleLines[3]}
+      </h1>
 
-                projet en valeur
+      <p className="mx-auto mb-8 max-w-lg text-base leading-7 text-slate-600 sm:mx-0 sm:text-lg lg:text-base">
+        {t.hero.description}
+      </p>
 
-            </h1>
-
-            <p className="mb-10 max-w-lg text-sm md:text-md lg:text-lg leading-8 text-slate-600">
-                Je conçois des modernes, rapides et élégants
-                afin d'aider les entreprises et les créateurs
-                a transformer leurs visiteurs en clients.
-            </p>
-
-            <HeroButtons />
-        </div>
-    );
+      <HeroButtons />
+    </div>
+  );
 }
 
 export default HeroText;
