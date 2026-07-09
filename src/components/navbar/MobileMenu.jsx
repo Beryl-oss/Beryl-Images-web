@@ -48,14 +48,7 @@ function MobileMenu() {
 
       {/* Bouton */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="
-          text-[#264653]
-          transition-transform
-          duration-300
-          hover:scale-110
-        "
-      >
+        onClick={() => setIsOpen(!isOpen)} className="text-[#264653] transition-transform duration-300 hover:scale-110">
         {isOpen ? (
           <X size={28} />
         ) : (
@@ -65,54 +58,12 @@ function MobileMenu() {
 
 
       {/* Menu */}
-      <div
-        ref={menuRef}
-        className="
-          absolute
-          right-0
-          top-14
-          w-72
-          rounded-2xl
-          border
-          border-white/20
-          bg-[#111]/80
-          px-8
-          py-8  
-          -translate-y-5
-          backdrop-blur-xl
-          shadow-xl
-        "
-      >
+      <div ref={menuRef} className="absolute right-0 top-14 w-72 rounded-2xl border border-white/20 bg-[#111]/80 px-8 py-8 -translate-y-5 backdrop-blur-xl shadow-xl">
 
-        <ul
-          ref={linksRef}
-          className="
-            flex
-            flex-col
-            gap-2
-          "
-        >
+        <ul ref={linksRef} className="flex flex-col gap-2">
           {t.nav.items.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="
-                  flex
-                  items-center
-                  justify-between
-                  rounded-2xl
-                  px-3
-                  py-3
-                  text-lg
-                  font-medium
-                  text-white
-                  transition-colors
-                  duration-300
-                  hover:bg-white/10
-                  hover:text-[#ff6d00]
-                "
-              >
+              <a href={item.href} onClick={() => setIsOpen(false)} className="flex items-center justify-between rounded-2xl px-3 py-3 text-lg font-medium text-white transition-colors duration-500 hover:bg-white/10 hover:backdrop-blur-sm hover:text-[#ff6d00]">
                 <span>{item.label}</span>
                 <span className="text-sm text-white/60">↗</span>
               </a>

@@ -1,7 +1,9 @@
 import Navbar from '../components/navbar/Navbar';
 
 import Hero from '../components/hero/Hero';
-import About from '../pages/About'
+import About from '../pages/About';
+import Services from '../pages/Services';
+
 
 function AppRoutes() {
   return (
@@ -9,6 +11,7 @@ function AppRoutes() {
       <Navbar />
       <Hero />
       <About />
+      <Services />
     </>
   );
 }

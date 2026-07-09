@@ -37,6 +37,35 @@ const translations = {
       ],
       button: 'En savoir plus',
     },
+    services: {
+      badge: 'Mes services',
+      title: 'Transformer des idées en expériences mémorables.',
+      description:
+        'Je conçois des marques, sites web et visuels qui connectent avec les gens et aident les entreprises à se démarquer.',
+      mainHeading: 'Design qui raconte votre histoire et élève votre marque.',
+      cards: [
+        {
+          title: 'Design graphique',
+          copy:
+            'Affiches, branding, réseaux sociaux, supports imprimés et identités visuelles conçus pour marquer les esprits.',
+        },
+        {
+          title: 'Développement Web',
+          copy: 'Sites modernes et responsives construits avec React et Tailwind CSS.',
+        },
+        {
+          title: 'Photographie',
+          copy:
+            'Images professionnelles qui capturent des moments authentiques et des produits.',
+        },
+        {
+          title: 'Identité de marque',
+          copy:
+            'Logos, palettes et identités visuelles conçus pour une reconnaissance durable.',
+        },
+      ],
+      button: 'Découvrir les projets',
+    },
   },
   en: {
     nav: {
@@ -64,13 +93,41 @@ const translations = {
       description:
         'At Béryl Images, we blend creativity, strategy and technology to craft memorable brand identities and modern digital experiences. Every project is designed with clarity, elegance and impact to help businesses build a strong and lasting presence.',
       badge: '✨ Premium creative studio',
-      cards: ['Brand identity', 'Modern websites', 'Visual storytelling', 'UI / UX design'],
+      cards: ['Brand identity', 'Modern websites', 'Visual storytelling', 'UI / UX Design'],
       features: [
         'Strategic brand identity',
         'High-performance websites',
         'Creative visual storytelling',
       ],
       button: 'Learn more',
+    },
+    services: {
+      badge: 'My services',
+      title: 'Turning ideas into memorable experiences.',
+      description:
+        'I design brands, websites and visuals that connect with people and help businesses stand out.',
+      mainHeading: 'Design that tells your story and elevates your brand.',
+      cards: [
+        {
+          title: 'Graphic Design',
+          copy:
+            'Posters, branding, social media, print materials and visual identities crafted to leave a lasting impression.',
+        },
+        {
+          title: 'Website Development',
+          copy: 'Modern responsive websites built with React and Tailwind CSS.',
+        },
+        {
+          title: 'Photography',
+          copy: 'Professional imagery that captures authentic moments and products.',
+        },
+        {
+          title: 'Brand Identity',
+          copy:
+            'Logos, color systems and visual identities designed for long-term recognition.',
+        },
+      ],
+      button: 'Explore projects',
     },
   },
 };

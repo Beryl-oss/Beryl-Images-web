@@ -21,7 +21,7 @@ function Hero() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="Home" className="relative min-h-screen overflow-hidden bg-[linear-gradient(135deg,_#ffffff_0%,_#f7fcfc_45%,_#eef9f9_100%)]">
+    <section ref={sectionRef} id="home" className="relative min-h-screen overflow-hidden bg-[linear-gradient(135deg,_#ffffff_0%,_#f7fcfc_45%,_#eef9f9_100%)]">
       <div className="absolute left-[-120px] top-[-120px] h-[280px] w-[280px] rounded-full bg-[#c2f2f2]/60 blur-3xl sm:h-[360px] sm:w-[360px]" />
       <div className="absolute bottom-[-80px] right-[-60px] h-[260px] w-[260px] rounded-full bg-[#356267]/10 blur-3xl sm:h-[320px] sm:w-[320px]" />
 
