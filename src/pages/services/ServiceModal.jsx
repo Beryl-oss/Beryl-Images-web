@@ -147,7 +147,7 @@ function ServiceModal({ selectedPreview, setSelectedPreview }) {
         >
 
           <p>
-            Press ESC or tap outside the preview to close.
+            Press ESC or the button to close.
           </p>
 
 

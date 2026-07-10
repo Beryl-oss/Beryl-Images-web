@@ -95,19 +95,19 @@ function About() {
 
 
   return (
-    <section ref={sectionRef} id="about" className="bg-[#EFF6FB] py-20 sm:py-24 lg:py-28">
+    <section ref={sectionRef} id="about" className="bg-[linear-gradient(180deg,_#f4f9fb_0%,_#eef7f8_100%)] py-24 sm:py-28 lg:py-32">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-5 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8 xl:px-10">
         <div className="w-full flex-1">
           <div
             ref={visualRef}
-            className="relative mx-auto h-[420px] overflow-hidden rounded-[28px] bg-[#264653] shadow-[0_25px_70px_rgba(0,0,0,0.15)] sm:h-[480px] lg:h-[560px] lg:max-w-[560px]"
+            className="relative mx-auto h-[420px] overflow-hidden rounded-[32px] border border-white/20 bg-[#264653] shadow-[0_30px_90px_rgba(15,23,42,0.16)] sm:h-[480px] lg:h-[560px] lg:max-w-[560px]"
           >
             <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[#FF6D00]/25 blur-3xl sm:h-64 sm:w-64"></div>
             <div className="absolute -left-16 -bottom-16 h-56 w-56 rounded-full bg-cyan-400/20 blur-3xl sm:h-72 sm:w-72"></div>
             <div className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/5 blur-3xl sm:h-64 sm:w-64"></div>
 
             <div className="absolute left-4 top-4 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md sm:left-6 sm:top-6 sm:px-5">
-              <p className="text-xs font-semibold tracking-[0.2em] text-white sm:text-sm">
+              <p className="text-xs font-semibold tracking-[0.2em] sm:text-sm">
                 {t.about.badge}
               </p>
             </div>
@@ -152,7 +152,7 @@ function About() {
         </div>
 
         <div ref={contentRef} className="w-full flex-1 text-center sm:text-left">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#FF6D00]">
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#ff6d00]">
             {t.about.eyebrow}
           </p>
 
@@ -187,7 +187,7 @@ function About() {
             </div>
           </div>
 
-          <button className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-[#264653] px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:bg-[#1d3740] hover:shadow-xl sm:mt-10 sm:px-8">
+          <button className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-[#264653] px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1d3740] hover:shadow-xl sm:mt-10 sm:px-8">
             {t.about.button}
             <LuArrowRight size={18} />
           </button>

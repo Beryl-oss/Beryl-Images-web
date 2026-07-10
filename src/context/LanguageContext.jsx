@@ -66,6 +66,44 @@ const translations = {
       ],
       button: 'Découvrir les projets',
     },
+    footer: {
+      brandText: 'Des systèmes de design élégants, des interfaces réfléchies et une présence digitale pensée pour la croissance.',
+      navigationTitle: 'Navigation',
+      contactTitle: 'Contact',
+      email: 'massenajoonas256@gmail.com',
+      phone: '+509 3583-2268',
+      address: '123 Main St, Anytown',
+      copyright: 'Tous droits réservés.',
+      social: [
+        { label: 'Twitter', href: '#' },
+        { label: 'LinkedIn', href: '#' },
+        { label: 'GitHub', href: '#' },
+      ],
+    },
+    contact: {
+      eyebrow: 'Contact',
+      heading: 'Prêt à créer quelque chose d’exceptionnel ?',
+      description:
+        'Discutons de votre prochain projet et donnons vie à une expérience digitale mémorable.',
+      emailLabel: 'Email',
+      phoneLabel: 'Téléphone',
+      addressLabel: 'Adresse',
+      cta: 'Écrire un message',
+      testimonialTitle: 'Confiance de marques ambitieuses',
+      testimonialIntro: 'Quelques mots de founders et d’équipes créatives qui ont apprécié la stratégie et l’exécution soignée.',
+    },
+    portfolio: {
+      eyebrow: 'Portfolio',
+      title: 'Des créations qui donnent vie aux marques.',
+      description: 'Découvrez une sélection de projets réalisés en design graphique, identité visuelle et création digitale.',
+      filters: [
+        { id: 'all', label: 'Tous' },
+        { id: 'branding', label: 'Branding' },
+        { id: 'flyers', label: 'Flyers' },
+        { id: 'web', label: 'Web Design' },
+        { id: 'photography', label: 'Photographie' },
+      ],
+    },
   },
   en: {
     nav: {
@@ -128,6 +166,38 @@ const translations = {
         },
       ],
       button: 'Explore projects',
+    },
+    footer: {
+      brandText: 'Elegant design systems, thoughtful interfaces, and a digital presence tailored for growth.',
+      navigationTitle: 'Navigate',
+      contactTitle: 'Contact',
+      email: 'contact@beryl.com',
+      phone: '+1 555 123 4567',
+      address: '123 Main St, Anytown',
+      copyright: 'All rights reserved.',
+      social: [
+        { label: 'Twitter', href: '#' },
+        { label: 'LinkedIn', href: '#' },
+        { label: 'GitHub', href: '#' },
+      ],
+    },
+    contact: {
+      eyebrow: 'Contact',
+      heading: 'Ready to create something exceptional?',
+      description:
+        'Let’s discuss your next project and bring a memorable digital experience to life.',
+      emailLabel: 'Email',
+      phoneLabel: 'Phone',
+      addressLabel: 'Address',
+      cta: 'Write a message',
+      testimonialTitle: 'Trusted by ambitious brands',
+      testimonialIntro: 'A few words from founders and creative teams who valued thoughtful strategy and polished execution.',
+    },
+    portfolio: {
+      eyebrow: 'Portfolio',
+      title: 'Designs that bring brands to life.',
+      description: 'Discover a selection of projects crafted in graphic design, visual identity, and digital creation.',
+      filters: ['All', 'Branding', 'Flyers', 'Web Design', 'Photography'],
     },
   },
 };
