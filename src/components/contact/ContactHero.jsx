@@ -16,7 +16,7 @@ function ContactHero({ title, description, ctaLabel, email }) {
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
         <a
           href={`mailto:${email}`}
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-slate-950 transition hover:bg-slate-100"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-white to-slate-100 px-6 py-3 font-semibold text-slate-950 transition hover:bg-slate-100"
         >
           <Mail size={18} />
           {ctaLabel}

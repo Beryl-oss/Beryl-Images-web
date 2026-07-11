@@ -99,8 +99,8 @@ const translations = {
       filters: [
         { id: 'all', label: 'Tous' },
         { id: 'branding', label: 'Branding' },
-        { id: 'flyers', label: 'Flyers' },
-        { id: 'web', label: 'Web Design' },
+        { id: 'flyers', label: 'Affiches' },
+        { id: 'web', label: 'Design web' },
         { id: 'photography', label: 'Photographie' },
       ],
     },
@@ -197,7 +197,13 @@ const translations = {
       eyebrow: 'Portfolio',
       title: 'Designs that bring brands to life.',
       description: 'Discover a selection of projects crafted in graphic design, visual identity, and digital creation.',
-      filters: ['All', 'Branding', 'Flyers', 'Web Design', 'Photography'],
+      filters: [
+        { id: 'all', label: 'All' },
+        { id: 'branding', label: 'Branding' },
+        { id: 'flyers', label: 'Flyers' },
+        { id: 'web', label: 'Web Design' },
+        { id: 'photography', label: 'Photography' },
+      ],
     },
   },
 };

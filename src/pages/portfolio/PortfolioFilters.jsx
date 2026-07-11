@@ -4,9 +4,6 @@ function PortfolioFilters({ selectedCategory, setSelectedCategory }) {
   const { t } = useLanguage();
   const categories = t.portfolio.filters;
 
-  console.log(categories);
-  const categories = t.portfolio.filters;
-
   return (
     <div className="mt-12 flex flex-wrap gap-4">
       {categories.map((category) => (
