@@ -22,22 +22,19 @@ function ServiceHero({ heroCard, content, previews, setSelectedPreview, setShowG
       // Texte + icône
 
       gsap.from(contentRef.current.children, {
+  y: 35,
+  opacity: 0,
+  duration: 0.8,
+  stagger: 0.15,
+  ease: "power3.out",
+  clearProps: "all",
 
-        opacity: 0,
-        y: 35,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: "power3.out",
-
-        scrollTrigger: {
-
-          trigger: heroRef.current,
-          start: "top 75%",
-          toggleActions: "play none none none",
-
-        },
-
-      });
+  scrollTrigger: {
+    trigger: heroRef.current,
+    start: "top 75%",
+    once: true,
+  },
+});
 
 
 
@@ -86,13 +83,11 @@ function ServiceHero({ heroCard, content, previews, setSelectedPreview, setShowG
       className="group relative overflow-hidden rounded-[36px] border border-white/10 bg-slate-900 p-8 text-white shadow-[0_40px_80px_-40px_rgba(38,70,83,0.7)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_50px_100px_-40px_rgba(38,70,83,0.9)] sm:p-10"
     >
 
-
       <div className="absolute inset-0 bg-gradient-to-br from-[#264653] via-slate-900 to-black" />
 
       <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#FF6D00]/20 blur-[120px]" />
 
       <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-cyan-400/10 blur-[120px]" />
-
 
 
 
@@ -148,11 +143,9 @@ function ServiceHero({ heroCard, content, previews, setSelectedPreview, setShowG
 
 
 
-
-
         <button
           onClick={() => setShowGallery(true)}
-          className="mt-10 inline-flex items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-slate-900 transition duration-300 hover:-translate-y-1 hover:bg-slate-100 md:hidden"
+          className="mt-10 inline-flex items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-slate-900 transition duration-300 hover:-translate-y-1 hover:bg-slate-100 lg:hidden"
         >
 
           {content.button}

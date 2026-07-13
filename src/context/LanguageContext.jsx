@@ -3,6 +3,9 @@ import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 const LanguageContext = createContext(null);
 
 const translations = {
+
+  /* Français */
+
   fr: {
     nav: {
       items: [
@@ -98,13 +101,14 @@ const translations = {
       description: 'Découvrez une sélection de projets réalisés en design graphique, identité visuelle et création digitale.',
       filters: [
         { id: 'all', label: 'Tous' },
-        { id: 'branding', label: 'Branding' },
-        { id: 'flyers', label: 'Affiches' },
-        { id: 'web', label: 'Design web' },
+        { id: 'flyer', label: 'Affiches' },
         { id: 'photography', label: 'Photographie' },
       ],
     },
   },
+
+  /* Anglais */
+
   en: {
     nav: {
       items: [
@@ -199,9 +203,7 @@ const translations = {
       description: 'Discover a selection of projects crafted in graphic design, visual identity, and digital creation.',
       filters: [
         { id: 'all', label: 'All' },
-        { id: 'branding', label: 'Branding' },
-        { id: 'flyers', label: 'Flyers' },
-        { id: 'web', label: 'Web Design' },
+        { id: 'flyer', label: 'Flyers' },
         { id: 'photography', label: 'Photography' },
       ],
     },

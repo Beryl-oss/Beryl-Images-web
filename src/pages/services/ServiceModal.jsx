@@ -30,7 +30,7 @@ function ServiceModal({ selectedPreview, setSelectedPreview }) {
         className="
           relative
           flex
-          max-h-[90vh]
+          max-h-[99vh]
           w-full
           max-w-5xl
           flex-col
@@ -89,8 +89,6 @@ function ServiceModal({ selectedPreview, setSelectedPreview }) {
             items-center
             justify-center
             rounded-[32px]
-            bg-white
-            p-4
             shadow-2xl
           "
         >
@@ -147,29 +145,9 @@ function ServiceModal({ selectedPreview, setSelectedPreview }) {
         >
 
           <p>
-            Press ESC or the button to close.
+            Press ESC or the X button to close.
           </p>
 
-
-
-          <button
-            onClick={() => setSelectedPreview(null)}
-            className="
-              rounded-full
-              bg-white
-              px-6
-              py-2.5
-              text-sm
-              font-semibold
-              text-slate-900
-              transition
-              duration-300
-              hover:-translate-y-0.5
-              hover:bg-slate-100
-            "
-          >
-            Close preview
-          </button>
 
 
         </div>

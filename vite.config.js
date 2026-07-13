@@ -8,4 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  server: {
+    allowedHosts: [
+      'errand-upcountry-paver.ngrok-free.dev'
+    ]
+  }
 })

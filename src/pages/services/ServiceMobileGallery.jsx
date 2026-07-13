@@ -83,9 +83,14 @@ function ServiceMobileGallery({
                 border-slate-200
                 p-3
                 text-left
+                shadow-sm
                 transition
-                duration-300
-                hover:bg-slate-50
+                duration-200
+                hover:bg-slate-150
+                hover:border-slate-300
+                hover:translate-y-[-3px]
+                hover:scale-103
+                hover:shadow-xl
               "
             >
 

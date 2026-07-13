@@ -165,21 +165,21 @@ function About() {
           </p>
 
           <div className="mt-8 space-y-4 sm:mt-10">
-            <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+            <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm transition duration-500 hover:-translate-y-2 hover:border-slate-300 hover:shadow-xl">
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FF6D00] text-white shadow-lg">
                 <LuPalette size={20} />
               </div>
               <p className="font-semibold text-[#264653]">{t.about.features[0]}</p>
             </div>
 
-            <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+            <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm transition duration-500 hover:-translate-y-2 hover:border-slate-300 hover:shadow-xl">
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FF6D00] text-white shadow-lg">
                 <LuCodeXml size={20} />
               </div>
               <p className="font-semibold text-[#264653]">{t.about.features[1]}</p>
             </div>
 
-            <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
+            <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm transition duration-500 hover:-translate-y-2 hover:border-slate-300 hover:shadow-xl">
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FF6D00] text-white shadow-lg">
                 <LuSparkles size={20} />
               </div>
