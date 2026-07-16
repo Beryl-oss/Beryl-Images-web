@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import { useLanguage } from "../context/LanguageContext";
 import ContactHero from "../components/contact/ContactHero";
+import ContactForm from "../components/contact/ContactForm";
 import ContactCard from "../components/contact/ContactCard";
 import TestimonialCard from "../components/contact/TestimonialCard";
 
@@ -13,6 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
   const { t } = useLanguage();
   const testimonials = t.contact.testimonials;
+  const [showForm, setShowForm] = useState(false);
 
   const sectionRef = useRef(null);
 
@@ -127,7 +129,12 @@ function Contact() {
               description={t.contact.description}
               ctaLabel={t.contact.cta}
               email={t.footer.email}
+              onOpenForm={() => setShowForm(!showForm)}
+              isOpen={showForm}
             />
+              <div className="mt-8">
+                <ContactForm isOpen={showForm} />
+              </div>
           </div>
 
           <div className="contact-panel rounded-[36px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm sm:p-8">

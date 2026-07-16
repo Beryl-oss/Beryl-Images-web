@@ -92,6 +92,15 @@ const translations = {
       phoneLabel: 'Téléphone',
       addressLabel: 'Adresse',
       cta: 'Écrire un message',
+      form: {
+        name: "Votre nom",
+        email: "Votre email",
+        message: "Parlez-moi de votre projet...",
+        send: "Envoyer",
+        sending: "Envoi...",
+        success: "Votre message a bien été envoyé. Merci !",
+        error: "Une erreur est survenue. Veuillez réessayer."
+      },
       testimonials: [
         {
           quote:
@@ -322,7 +331,15 @@ const translations = {
       phoneLabel: 'Phone',
       addressLabel: 'Address',
       cta: 'Write a message',
-
+      form: {
+        name: "Your name",
+        email: "Your email",
+        message: "Tell me about your project...",
+        send: "Send",
+        sending: "Sending...",
+        success: "Your message has been sent. Thank you!",
+        error: "Something went wrong. Please try again."
+      },
       testimonials: [
         {
           quote:
