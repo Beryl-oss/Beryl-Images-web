@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 import { LuX, LuExternalLink } from "react-icons/lu";
+import useModalAnimation from "../../hooks/useModalAnimation";
 
 
 function PortfolioModal({
   selectedProject,
   setSelectedProject,
 }) {
+
+  const modalRef = useModalAnimation(!!selectedProject);
 
   useEffect(() => {
 
@@ -44,8 +47,9 @@ function PortfolioModal({
     >
 
       <div
+        ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className="relative flex max-h-[90vh] w-full max-w-5xl flex-col items-center gap-6 overflow-y-auto py-6 animate-in fade-in zoom-in duration-300"
+        className="relative flex max-h-[90vh] w-full max-w-5xl flex-col items-center gap-6 overflow-y-auto py-6"
       >
 
 
@@ -70,9 +74,10 @@ function PortfolioModal({
         >
 
           <img
+            loading="lazy"
             src={selectedProject.image}
             alt={selectedProject.title}
-            className="max-h-[70vh] max-w-[90vw] rounded-2xl object-contain"
+            className="modal-item max-h-[70vh] max-w-[90vw] rounded-2xl object-contain"
           />
 
         </div>
@@ -85,7 +90,7 @@ function PortfolioModal({
         {/* TITLE */}
 
         <h2
-          className="text-center text-3xl font-semibold text-white"
+          className="modal-item text-center text-3xl font-semibold text-white"
         >
 
           {selectedProject.title}
@@ -98,7 +103,7 @@ function PortfolioModal({
         {/* TOOLS */}
 
         <div
-          className="flex flex-wrap justify-center gap-2"
+          className="modal-item flex flex-wrap justify-center gap-2"
         >
 
           {selectedProject.tools?.map((tool) => (

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import heroPic from "../../assets/images/Beryl_IMG2.png";
+import heroPic from "../../assets/images/Beryl_IMG2.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,6 +86,9 @@ function HeroImage() {
 
           <div className="relative overflow-hidden rounded-[26px] border border-[#356267]/10">
             <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               src={heroPic}
               alt="Portrait de Beryl"
               className="relative z-10 h-auto w-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"

@@ -67,7 +67,7 @@ function ServiceMobileGallery({
 
             <button
               key={preview.title}
-
+              aria-label="Fermer la fenêtre"
               onClick={()=>{
                 setSelectedPreview(preview);
                 setShowGallery(false);
@@ -108,6 +108,7 @@ function ServiceMobileGallery({
               >
 
                 <img
+                  loading="lazy"
                   src={preview.image}
                   alt={preview.title}
                   className="

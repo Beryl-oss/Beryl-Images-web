@@ -9,6 +9,7 @@ function ServicePreviewGallery({ previews, setSelectedPreview }) {
         >
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <img
+              loading="lazy"
               src={preview.image}
               alt={preview.title}
               className="h-full w-full object-cover transition duration-500 group-hover/preview:scale-110"

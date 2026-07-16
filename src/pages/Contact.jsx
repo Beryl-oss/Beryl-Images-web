@@ -7,68 +7,82 @@ import { useLanguage } from "../context/LanguageContext";
 import ContactHero from "../components/contact/ContactHero";
 import ContactCard from "../components/contact/ContactCard";
 import TestimonialCard from "../components/contact/TestimonialCard";
-import { testimonials } from "../components/contact/contactData";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
   const { t } = useLanguage();
+  const testimonials = t.contact.testimonials;
 
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 70%",
-          toggleActions: "play none none none",
-        },
-        defaults: {
-          ease: "power3.out",
-        },
+
+  const ctx = gsap.context(() => {
+
+    const cards = gsap.utils.toArray(".testimonial-card");
+
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 70%",
+        toggleActions: "play none none none",
+      },
+    });
+
+
+    tl.from(".contact-hero", {
+      opacity: 0,
+      y: 35,
+      duration: 0.9,
+    })
+
+
+    .from(".contact-panel", {
+      opacity: 0,
+      x: 40,
+      duration: 0.8,
+    }, "-=0.45")
+
+
+    .from(".testimonial-header", {
+      opacity: 0,
+      y: 30,
+      duration: 0.7,
+    }, "-=0.35");
+
+
+    if(cards.length){
+
+      gsap.set(cards,{
+        opacity:0,
+        y:30,
       });
 
-      tl.from(".contact-hero", {
-        opacity: 0,
-        y: 35,
-        duration: 0.9,
-      })
 
-        .from(
-          ".contact-panel",
-          {
-            opacity: 0,
-            x: 40,
-            duration: 0.8,
-          },
-          "-=0.45"
-        )
+      tl.to(cards,{
+        opacity:1,
+        y:0,
+        stagger:0.15,
+        duration:0.65,
+        ease:"power3.out",
+      }, "-=0.25");
 
-        .from(
-          ".testimonial-header",
-          {
-            opacity: 0,
-            y: 30,
-            duration: 0.7,
-          },
-          "-=0.35"
-        )
+    }
 
-        .from(
-          ".testimonial-card",
-          {
-            opacity: 0,
-            y: 30,
-            stagger: 0.15,
-            duration: 0.65,
-          },
-          "-=0.25"
-        );
-    }, sectionRef);
 
-    return () => ctx.revert();
-  }, []);
+    ScrollTrigger.refresh();
+
+
+  }, sectionRef);
+
+
+  return () => ctx.revert();
+
+
+}, []);
+
 
   const contactItems = [
     {
@@ -147,10 +161,9 @@ function Contact() {
           </div>
 
           <div className="mt-8 grid gap-5 lg:grid-cols-2">
-            {testimonials.map((testimonial) => (
+            {testimonials.map((testimonial, index) => (
               <TestimonialCard
-                key={testimonial.name}
-                className="testimonial-card"
+                key={index}
                 {...testimonial}
               />
             ))}

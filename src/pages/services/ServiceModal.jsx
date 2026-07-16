@@ -1,14 +1,18 @@
 import { LuX } from "react-icons/lu";
+import useModalAnimation from "../../hooks/useModalAnimation";
 
 
 function ServiceModal({ selectedPreview, setSelectedPreview }) {
 
   if (!selectedPreview) return null;
+  
+    const modalRef = useModalAnimation(!!selectedPreview);
 
 
   return (
 
     <div
+      ref={modalRef}
       onClick={() => setSelectedPreview(null)}
       className="
         fixed
@@ -94,6 +98,8 @@ function ServiceModal({ selectedPreview, setSelectedPreview }) {
         >
 
           <img
+            loading="lazy"
+            modal-item
             src={selectedPreview.image}
             alt={selectedPreview.title}
             className="

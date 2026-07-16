@@ -32,6 +32,7 @@ function ProjectCard({ project, setSelectedProject }) {
       >
 
         <img
+          loading="lazy"
           src={project.thumbnail}
           alt={project.title}
           className="
@@ -40,6 +41,7 @@ function ProjectCard({ project, setSelectedProject }) {
             object-cover
             transition
             duration-700
+            will-change-transform
             group-hover:scale-110
           "
         />
@@ -205,9 +207,8 @@ function ProjectCard({ project, setSelectedProject }) {
 
           <button
             onClick={(e)=>{
-                
-                setSelectedProject(project);
-            }}
+                e.stopPropagation();
+                setSelectedProject(project);}}
             className="
               flex
               items-center

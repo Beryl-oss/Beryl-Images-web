@@ -61,7 +61,7 @@ function Navbar() {
 
   return (
     <header className="fixed top-3 left-0 z-50 w-full px-3 sm:px-5">
-      <nav ref={navRef} className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/70 bg-white/70 px-4 py-2 shadow-[0_10px_35px_rgba(15,23,42,0.12)] backdrop-blur-[24px] backdrop-saturate-150 sm:px-6 lg:px-8">
+      <nav ref={navRef} className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/70 bg-white/60 px-4 py-2 shadow-[0_10px_35px_rgba(15,23,42,0.12)] backdrop-blur-[24px] backdrop-saturate-150 sm:px-6 lg:px-8">
         {/* Logo */}
         <Logo logoRef={logoRef} />
 

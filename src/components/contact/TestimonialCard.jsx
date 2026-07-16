@@ -1,7 +1,9 @@
 function TestimonialCard({ quote, name, role }) {
+
   return (
     <div
       className="
+        testimonial-card
         group
         relative
         overflow-hidden
@@ -11,12 +13,10 @@ function TestimonialCard({ quote, name, role }) {
         bg-white/5
         p-5
         backdrop-blur-sm
-
         transition-all
         duration-500
         ease-out
-
-        hover:-translate-y-2
+        hover:-translate-y-9
         hover:border-white/20
         hover:bg-white/[0.08]
         hover:shadow-[0_25px_70px_rgba(0,0,0,0.35)]
@@ -31,7 +31,6 @@ function TestimonialCard({ quote, name, role }) {
           transition-opacity
           duration-500
           group-hover:opacity-100
-
           bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.08),_transparent_65%)]
         "
       />

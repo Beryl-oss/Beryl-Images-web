@@ -107,33 +107,33 @@ function About() {
             <div className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/5 blur-3xl sm:h-64 sm:w-64"></div>
 
             <div className="absolute left-4 top-4 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md sm:left-6 sm:top-6 sm:px-5">
-              <p className="text-xs font-semibold tracking-[0.2em] sm:text-sm">
+              <p className="text-xs font-semibold text-white tracking-[0.2em] sm:text-sm">
                 {t.about.badge}
               </p>
             </div>
 
-            <div className="about-card absolute left-4 top-24 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-md sm:left-6 sm:top-28 sm:px-5 sm:py-4">
+            <div className="about-card absolute left-4 top-28 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-3 py-2 backdrop-blur-md sm:left-6 sm:top-28 sm:px-5 sm:py-4">
               <LuPalette size={18} className="text-[#FFB347] sm:size-5" />
               <p className="text-sm font-semibold text-white">
                 {t.about.cards[0]}
               </p>
             </div>
 
-            <div className="about-card absolute right-4 top-20 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-md sm:right-6 sm:top-24 sm:px-5 sm:py-4">
+            <div className="about-card absolute right-4 top-17 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-3 py-2 backdrop-blur-md sm:right-6 sm:top-24 sm:px-5 sm:py-4">
               <LuCodeXml size={18} className="text-[#FFB347] sm:size-5" />
               <p className="text-sm font-semibold text-white">
                 {t.about.cards[1]}
               </p>
             </div>
 
-            <div className="about-card absolute left-4 bottom-16 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-md sm:left-6 sm:bottom-20 sm:px-5 sm:py-4">
+            <div className="about-card absolute left-4 bottom-13 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-3 py-2 backdrop-blur-md sm:left-6 sm:bottom-20 sm:px-5 sm:py-4">
               <LuCamera size={18} className="text-[#FFB347] sm:size-5" />
               <p className="text-sm font-semibold text-white">
                 {t.about.cards[2]}
               </p>
             </div>
 
-            <div className="about-card absolute right-4 bottom-20 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-md sm:right-6 sm:bottom-24 sm:px-5 sm:py-4">
+            <div className="about-card absolute right-4 bottom-25 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-3 py-2 backdrop-blur-md sm:right-6 sm:bottom-24 sm:px-5 sm:py-4">
               <LuSparkles size={18} className="text-[#FFB347] sm:size-5" />
               <p className="text-sm font-semibold text-white">
                 {t.about.cards[3]}
@@ -142,6 +142,7 @@ function About() {
 
             <div className="absolute inset-0 flex items-center justify-center">
               <img
+                loading="lazy"
                 ref={logoRef}
                 src={BerylLogo}
                 alt="Béryl Images"

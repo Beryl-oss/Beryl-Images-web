@@ -92,17 +92,145 @@ const translations = {
       phoneLabel: 'Téléphone',
       addressLabel: 'Adresse',
       cta: 'Écrire un message',
+      testimonials: [
+        {
+          quote:
+            "Une collaboration remarquable du premier échange jusqu'à la livraison. L'attention portée aux détails et la qualité d'exécution ont fait toute la différence.",
+          name: "Amélie D.",
+          role: "Founder, Studio Nox",
+        },
+        {
+          quote:
+            "Notre vision a été parfaitement comprise et traduite en une identité cohérente et raffinée. Un accompagnement à la fois créatif, stratégique et irréprochable.",
+          name: "Milo R.",
+          role: "Creative Lead, Atelier One",
+        },
+      ],
       testimonialTitle: 'Confiance de marques ambitieuses',
       testimonialIntro: 'Quelques mots de founders et d’équipes créatives qui ont apprécié la stratégie et l’exécution soignée.',
     },
     portfolio: {
       eyebrow: 'Portfolio',
       title: 'Des créations qui donnent vie aux marques.',
-      description: 'Découvrez une sélection de projets réalisés en design graphique, identité visuelle et création digitale.',
+      description:
+        'Découvrez une sélection de projets réalisés en design graphique, identité visuelle et création digitale.',
+
       filters: [
         { id: 'all', label: 'Tous' },
         { id: 'flyer', label: 'Affiches' },
         { id: 'photography', label: 'Photographie' },
+      ],
+
+      projects: [
+        {
+          id: 1,
+          title: "Jerry Petit-Homme",
+          description:
+            "Création d'un visuel promotionnel destiné à mettre en valeur le talent de Jerry Petit-Homme au sein du FC Toro.",
+          type: "Sports Flyer",
+          category: "Affiche",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 2,
+          title: "Ander Parfumerie",
+          description:
+            "Conception de supports publicitaires modernes pour promouvoir une marque de parfum.",
+          type: "Advertising Design",
+          category: "Affiche",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 3,
+          title: "Concert Event",
+          description:
+            "Affiche événementielle mettant l'accent sur une direction artistique dynamique.",
+          type: "Event Poster",
+          category: "Affiche",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 4,
+          title: "DJ Anymix Booking",
+          description:
+            "Création d'une affiche de booking premium destinée à un DJ fictif.",
+          type: "Booking Flyer",
+          category: "Affiche",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 5,
+          title: "Portrait de Acsa Laure",
+          description:
+            "Portrait capturant un moment authentique de l'artiste durant sa performance.",
+          type: "Portrait Photography",
+          category: "Photographie",
+          categoryId: "photography",
+        },
+
+        {
+          id: 6,
+          title: "Portrait d'un chanteur",
+          description:
+            "Photographie mettant en valeur les émotions d'un chanteur pendant son interprétation.",
+          type: "Portrait Photography",
+          category: "Photographie",
+          categoryId: "photography",
+        },
+
+        {
+          id: 7,
+          title: "Affiche d'un championnat",
+          description:
+            "Affiche sportive annonçant un championnat annuel avec une identité visuelle énergique.",
+          type: "Sports Poster",
+          category: "Affiche",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 8,
+          title: "Portrait d'un bassiste",
+          description:
+            "Portrait mettant en avant la concentration et l'expression d'un bassiste.",
+          type: "Portrait Photography",
+          category: "Photographie",
+          categoryId: "photography",
+        },
+
+        {
+          id: 9,
+          title: "Portrait d'un orateur",
+          description:
+            "Photographie illustrant la présence et la concentration d'un orateur.",
+          type: "Portrait Photography",
+          category: "Photographie",
+          categoryId: "photography",
+        },
+
+        {
+          id: 10,
+          title: "Portrait d'un batteur",
+          description:
+            "Portrait capturant l'énergie et la précision d'un batteur en pleine performance.",
+          type: "Portrait Photography",
+          category: "Photographie",
+          categoryId: "photography",
+        },
+
+        {
+          id: 11,
+          title: "Hands That Speak",
+          description:
+            "Une image où les mains deviennent le langage de la musique, dans une composition sobre et intemporelle.",
+          type: "Music Lifestyle Photography",
+          category: "Photographie",
+          categoryId: "photography",
+        },
       ],
     },
   },
@@ -134,7 +262,7 @@ const translations = {
       heading: 'Creating digital experiences that leave a lasting impression.',
       description:
         'At Béryl Images, we blend creativity, strategy and technology to craft memorable brand identities and modern digital experiences. Every project is designed with clarity, elegance and impact to help businesses build a strong and lasting presence.',
-      badge: '✨ Premium creative studio',
+      badge: 'Premium creative studio',
       cards: ['Brand identity', 'Modern websites', 'Visual storytelling', 'UI / UX Design'],
       features: [
         'Strategic brand identity',
@@ -175,8 +303,8 @@ const translations = {
       brandText: 'Elegant design systems, thoughtful interfaces, and a digital presence tailored for growth.',
       navigationTitle: 'Navigate',
       contactTitle: 'Contact',
-      email: 'contact@beryl.com',
-      phone: '+1 555 123 4567',
+      email: 'massenajonas256@gmail.com',
+      phone: '+509 3583-2268',
       address: '123 Main St, Anytown',
       copyright: 'All rights reserved.',
       social: [
@@ -194,17 +322,148 @@ const translations = {
       phoneLabel: 'Phone',
       addressLabel: 'Address',
       cta: 'Write a message',
+
+      testimonials: [
+        {
+          quote:
+            'The whole experience felt premium, thoughtful, and very clear from the first call.',
+          name: 'Amélie D.',
+          role: 'Founder, Studio Nox',
+        },
+        {
+          quote:
+            'Every detail was aligned with our brand. The final result felt polished and strategic.',
+          name: 'Milo R.',
+          role: 'Creative Lead, Atelier One',
+        },
+      ],
+
       testimonialTitle: 'Trusted by ambitious brands',
-      testimonialIntro: 'A few words from founders and creative teams who valued thoughtful strategy and polished execution.',
-    },
+      testimonialIntro:
+        'A few words from founders and creative teams who valued thoughtful strategy and polished execution.',
+    }, 
     portfolio: {
-      eyebrow: 'Portfolio',
-      title: 'Designs that bring brands to life.',
-      description: 'Discover a selection of projects crafted in graphic design, visual identity, and digital creation.',
+  eyebrow: 'Portfolio',
+  title: 'Designs that bring brands to life.',
+  description:
+    'Discover a selection of projects crafted in graphic design, visual identity, and digital creation.',
+
       filters: [
         { id: 'all', label: 'All' },
         { id: 'flyer', label: 'Flyers' },
         { id: 'photography', label: 'Photography' },
+      ],
+
+      projects: [
+        {
+          id: 1,
+          title: "Jerry Petit-Homme",
+          description:
+            "Promotional visual created to highlight Jerry Petit-Homme's talent within FC Toro.",
+          type: "Sports Flyer",
+          category: "Flyer",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 2,
+          title: "Ander Parfumerie",
+          description:
+            "Modern advertising materials designed to promote a perfume brand.",
+          type: "Advertising Design",
+          category: "Flyer",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 3,
+          title: "Concert Event",
+          description:
+            "Event poster focused on a dynamic and engaging art direction.",
+          type: "Event Poster",
+          category: "Flyer",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 4,
+          title: "DJ Anymix Booking",
+          description:
+            "Premium booking flyer created for a fictional DJ.",
+          type: "Booking Flyer",
+          category: "Flyer",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 5,
+          title: "Acsa Laure Portrait",
+          description:
+            "Portrait capturing an authentic moment of the artist during a performance.",
+          type: "Portrait Photography",
+          category: "Photography",
+          categoryId: "photography",
+        },
+
+        {
+          id: 6,
+          title: "Singer Portrait",
+          description:
+            "Photography highlighting the emotions of a singer during a performance.",
+          type: "Portrait Photography",
+          category: "Photography",
+          categoryId: "photography",
+        },
+
+        {
+          id: 7,
+          title: "Championship Poster",
+          description:
+            "Sports poster announcing an annual championship with an energetic visual identity.",
+          type: "Sports Poster",
+          category: "Flyer",
+          categoryId: "flyer",
+        },
+
+        {
+          id: 8,
+          title: "Bass Player Portrait",
+          description:
+            "Portrait highlighting the focus and expression of a bass player.",
+          type: "Portrait Photography",
+          category: "Photography",
+          categoryId: "photography",
+        },
+
+        {
+          id: 9,
+          title: "Speaker Portrait",
+          description:
+            "Photography showing the presence and concentration of a speaker.",
+          type: "Portrait Photography",
+          category: "Photography",
+          categoryId: "photography",
+        },
+
+        {
+          id: 10,
+          title: "Drummer Portrait",
+          description:
+            "Portrait capturing the energy and precision of a drummer performing.",
+          type: "Portrait Photography",
+          category: "Photography",
+          categoryId: "photography",
+        },
+
+        {
+          id: 11,
+          title: "Hands That Speak",
+          description:
+            "An image where hands become the language of music through a timeless composition.",
+          type: "Music Lifestyle Photography",
+          category: "Photography",
+          categoryId: "photography",
+        },
       ],
     },
   },

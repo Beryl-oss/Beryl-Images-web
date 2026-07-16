@@ -184,11 +184,9 @@ function ServiceHero({ heroCard, content, previews, setSelectedPreview, setShowG
 
 
                 <img
-
+                  loading="lazy"
                   src={preview.image}
-
                   alt={preview.title}
-
                   className="h-full w-full object-cover"
 
                 />
