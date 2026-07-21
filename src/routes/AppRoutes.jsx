@@ -15,11 +15,13 @@ function AppRoutes() {
     <>
       <Navbar />
 
-      <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Portfolio />
+        <Contact />
+      </main>
 
       <Footer />
     </>

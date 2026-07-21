@@ -12,5 +12,11 @@ export default defineConfig({
     allowedHosts: [
       'errand-upcountry-paver.ngrok-free.dev'
     ]
+  },
+  preview: {
+    host: true,
+    allowedHosts: [
+      'errand-upcountry-paver.ngrok-free.dev'
+    ]
   }
 })

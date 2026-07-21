@@ -18,12 +18,17 @@ function Logo({ logoRef }) {
           h-9
           w-auto
           object-contain
-          bg-white/50
           px-1.5
           rounded-md
-          transition-transform
+          border-white/70 
+          bg-white/70 
+          text-[#264653]
+          shadow-[0_6px_18px_rgba(15,23,42,0.1)] 
+          backdrop-blur-md 
+          transition-all 
+          duration-300 hover:scale-105
+          hover:bg-white
           scale-[1.2]
-          duration-300
           hover:scale-[1.25]
         "
       />

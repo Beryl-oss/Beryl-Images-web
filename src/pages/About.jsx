@@ -188,10 +188,10 @@ function About() {
             </div>
           </div>
 
-          <button className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-[#264653] px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1d3740] hover:shadow-xl sm:mt-10 sm:px-8">
+          <a href="#contact" className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-[#264653] px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1d3740] hover:shadow-xl sm:mt-10 sm:px-8">
             {t.about.button}
             <LuArrowRight size={18} />
-          </button>
+          </a>
         </div>
       </div>
     </section>

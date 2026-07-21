@@ -4,15 +4,18 @@ import gsap from "gsap";
 
 import { useLanguage } from "../../context/LanguageContext";
 
+
 function ContactForm({ isOpen }) {
 
   const { t } = useLanguage();
 
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
 
   const formRef = useRef(null);
   const fieldsRef = useRef([]);
+
 
 
   useEffect(() => {
@@ -32,7 +35,7 @@ function ContactForm({ isOpen }) {
 
 
       gsap.fromTo(
-        fieldsRef.current,
+        fieldsRef.current.filter(Boolean),
         {
           opacity: 0,
           y: 20,
@@ -42,7 +45,7 @@ function ContactForm({ isOpen }) {
           y: 0,
           stagger: 0.12,
           duration: 0.5,
-          delay: 0.2,
+          delay: 0.15,
           ease: "power3.out",
         }
       );
@@ -60,7 +63,10 @@ function ContactForm({ isOpen }) {
 
     }
 
+
   }, [isOpen]);
+
+
 
 
 
@@ -68,9 +74,9 @@ function ContactForm({ isOpen }) {
 
     e.preventDefault();
 
+
     setStatus("sending");
     setMessage("");
-
 
     const form = e.target;
     const formData = new FormData(form);
@@ -79,7 +85,7 @@ function ContactForm({ isOpen }) {
     try {
 
       const response = await fetch(
-        "https://formspree.io/f/xjgngnyv",
+        "https://formspree.io/f/xpqvpdpk",
         {
           method: "POST",
           body: formData,
@@ -90,22 +96,21 @@ function ContactForm({ isOpen }) {
       );
 
 
-      if (response.ok) {
-
-        setStatus("success");
-
-        setMessage(
-          t.contact.form.success
-        );
-
-        form.reset();
-
-
-      } else {
-
+      if (!response.ok) {
         throw new Error();
-
       }
+
+
+      setStatus("success");
+
+      setMessage(
+        t.contact.form.success
+      );
+
+
+      form.reset();
+      setEmail("");
+
 
 
     } catch (error) {
@@ -122,12 +127,14 @@ function ContactForm({ isOpen }) {
 
 
 
+
   return (
 
     <div
       ref={formRef}
-      className="overflow-hidden opacity-0 h-0"
+      className="overflow-hidden h-0 opacity-0"
     >
+
 
       <form
         onSubmit={handleSubmit}
@@ -139,9 +146,21 @@ function ContactForm({ isOpen }) {
           ref={(el) => fieldsRef.current[0] = el}
           type="text"
           name="name"
+          autoComplete="name"
           placeholder={t.contact.form.name}
           required
-          className="w-full rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-white outline-none placeholder:text-slate-400 transition-all duration-200 ease-out hover:bg-white/3 focus:border-[#ff6d00]"
+          className="
+            w-full rounded-2xl
+            border border-white/10
+            bg-white/5
+            px-5 py-3
+            text-white
+            outline-none
+            placeholder:text-slate-400
+            transition-all duration-200
+            hover:bg-white/10
+            focus:border-[#ff6d00]
+          "
         />
 
 
@@ -150,9 +169,30 @@ function ContactForm({ isOpen }) {
           ref={(el) => fieldsRef.current[1] = el}
           type="email"
           name="email"
+          value={email}
+          onChange={(e)=>setEmail(e.target.value)}
+          autoComplete="email"
           placeholder={t.contact.form.email}
           required
-          className="w-full rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-white outline-none placeholder:text-slate-400 transition-all duration-200 ease-out hover:bg-white/3 focus:border-[#ff6d00]"
+          className="
+            w-full rounded-2xl
+            border border-white/10
+            bg-white/5
+            px-5 py-3
+            text-white
+            outline-none
+            placeholder:text-slate-400
+            transition-all duration-200
+            hover:bg-white/10
+            focus:border-[#ff6d00]
+          "
+        />
+
+
+        <input
+          type="hidden"
+          name="_replyto"
+          value={email}
         />
 
 
@@ -160,10 +200,22 @@ function ContactForm({ isOpen }) {
         <textarea
           ref={(el) => fieldsRef.current[2] = el}
           name="message"
+          autoComplete="off"
           placeholder={t.contact.form.message}
           rows="5"
           required
-          className="w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-white outline-none placeholder:text-slate-400 transition-all duration-200 ease-out hover:bg-white/3 focus:border-[#ff6d00]"
+          className="
+            w-full resize-none rounded-2xl
+            border border-white/10
+            bg-white/5
+            px-5 py-3
+            text-white
+            outline-none
+            placeholder:text-slate-400
+            transition-all duration-200
+            hover:bg-white/10
+            focus:border-[#ff6d00]
+          "
         />
 
 
@@ -172,16 +224,27 @@ function ContactForm({ isOpen }) {
           ref={(el) => fieldsRef.current[3] = el}
           type="submit"
           disabled={status === "sending"}
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-[#ff6d00] px-6 py-3 font-semibold text-white transition hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
+          className="
+            inline-flex items-center justify-center gap-2
+            rounded-full
+            bg-[#ff6d00]
+            px-6 py-3
+            font-semibold text-white
+            transition-all duration-200
+            hover:bg-[#d85e00]
+            hover:scale-105
+            disabled:cursor-not-allowed
+            disabled:opacity-60
+          "
         >
 
-          {status === "sending"
-            ? t.contact.form.sending
-            : t.contact.form.send
+          {
+            status === "sending"
+              ? t.contact.form.sending
+              : t.contact.form.send
           }
 
-
-          <Send size={18} />
+          <Send size={18}/>
 
         </button>
 
@@ -191,7 +254,7 @@ function ContactForm({ isOpen }) {
 
           <div className="flex items-center gap-2 text-sm text-green-400">
 
-            <CheckCircle size={18} />
+            <CheckCircle size={18}/>
 
             {message}
 
@@ -205,7 +268,7 @@ function ContactForm({ isOpen }) {
 
           <div className="flex items-center gap-2 text-sm text-red-400">
 
-            <AlertCircle size={18} />
+            <AlertCircle size={18}/>
 
             {message}
 
@@ -214,7 +277,9 @@ function ContactForm({ isOpen }) {
         )}
 
 
+
       </form>
+
 
     </div>
 

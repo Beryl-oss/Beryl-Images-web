@@ -78,6 +78,13 @@ textarea {
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-padding-top: 90px;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
 
 /* =========================
    Selection

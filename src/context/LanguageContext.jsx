@@ -73,14 +73,13 @@ const translations = {
       brandText: 'Des systèmes de design élégants, des interfaces réfléchies et une présence digitale pensée pour la croissance.',
       navigationTitle: 'Navigation',
       contactTitle: 'Contact',
-      email: 'massenajoonas256@gmail.com',
+      email: 'massenajonas256@gmail.com',
       phone: '+509 3583-2268',
       address: '123 Main St, Anytown',
       copyright: 'Tous droits réservés.',
       social: [
-        { label: 'Twitter', href: '#' },
-        { label: 'LinkedIn', href: '#' },
-        { label: 'GitHub', href: '#' },
+        { label: 'Instagram', href: 'https://www.instagram.com/beryl_images' },
+        { label: 'GitHub', href: 'https://github.com/beryl-oss' },
       ],
     },
     contact: {
@@ -105,14 +104,20 @@ const translations = {
         {
           quote:
             "Une collaboration remarquable du premier échange jusqu'à la livraison. L'attention portée aux détails et la qualité d'exécution ont fait toute la différence.",
-          name: "Amélie D.",
-          role: "Founder, Studio Nox",
+          name: "Mathaus D.",
+          role: "Founder, Dufrene Création",
         },
         {
           quote:
-            "Notre vision a été parfaitement comprise et traduite en une identité cohérente et raffinée. Un accompagnement à la fois créatif, stratégique et irréprochable.",
-          name: "Milo R.",
-          role: "Creative Lead, Atelier One",
+            "Notre vision a été parfaitement comprise et traduite en une conception cohérente et raffinée. Un accompagnement à la fois créatif, stratégique et irréprochable.",
+          name: 'Ander',
+          role: 'CEO, Ander Parfumerie',
+        },
+        {
+          quote:
+            "Béryl a réalisé un excellent travail en respectant parfaitement l'identité visuelle de Pixora School. Son sens du détail, son organisation et son professionalisme donnent un résultat de grande qualité.",
+          name: "Fritz Gérald H.",
+          role: "PDG, Pixora School",
         },
       ],
       testimonialTitle: 'Confiance de marques ambitieuses',
@@ -240,6 +245,16 @@ const translations = {
           category: "Photographie",
           categoryId: "photography",
         },
+
+        {
+          id: 12,
+          title: "Formation Pixora School",
+          type: "Advertising Design",
+          description:
+            "Une conception minimaliste, conçue pour inciter des visiteurs à acheter la formation",
+          category: "Affiche",
+          categoryId: "flyer",
+        },
       ],
     },
   },
@@ -317,9 +332,8 @@ const translations = {
       address: '123 Main St, Anytown',
       copyright: 'All rights reserved.',
       social: [
-        { label: 'Twitter', href: '#' },
-        { label: 'LinkedIn', href: '#' },
-        { label: 'GitHub', href: '#' },
+        { label: 'Instagram', href: 'https://www.instagram.com/beryl_images' },
+        { label: 'GitHub', href: 'https://github.com/beryl-oss' },
       ],
     },
     contact: {
@@ -344,17 +358,22 @@ const translations = {
         {
           quote:
             'The whole experience felt premium, thoughtful, and very clear from the first call.',
-          name: 'Amélie D.',
-          role: 'Founder, Studio Nox',
+          name: 'Mathaus D.',
+          role: 'Founder, Dufrene Création',
         },
         {
           quote:
             'Every detail was aligned with our brand. The final result felt polished and strategic.',
-          name: 'Milo R.',
-          role: 'Creative Lead, Atelier One',
+          name: 'Ander',
+          role: 'CEO, Ander Parfumerie',
+        },
+        {
+          quote:
+            "Béryl did an excellent job respecting Pixora School's visual identity. His attention to detail, organization, and professionalism resulted in a high-quality outcome.",
+          name: "Fritz Gérald H.",
+          role: "PDG, Pixora School",
         },
       ],
-
       testimonialTitle: 'Trusted by ambitious brands',
       testimonialIntro:
         'A few words from founders and creative teams who valued thoughtful strategy and polished execution.',
@@ -480,6 +499,16 @@ const translations = {
           type: "Music Lifestyle Photography",
           category: "Photography",
           categoryId: "photography",
+        },
+
+        {
+          id: 12,
+          title: "Formation Pixora School",
+          type: "Advertising Design",
+          description:
+            "A minimalist design, made to incite users to buy the formation",
+          category: "Flyer",
+          categoryId: "flyer",
         },
       ],
     },

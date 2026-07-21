@@ -4,7 +4,7 @@ function FooterBottomBar({ copyright, socialLinks }) {
       <p>© {new Date().getFullYear()} Beryl Images. {copyright}</p>
       <div className="flex flex-wrap gap-4">
         {socialLinks.map((item) => (
-          <a key={item.label} href={item.href} className="transition-colors duration-200 hover:text-white">
+          <a target="_blank" rel="noopener noreferrer" key={item.label} href={item.href} className="transition-colors duration-200 hover:text-white">
             {item.label}
           </a>
         ))}

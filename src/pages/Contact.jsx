@@ -97,7 +97,7 @@ function Contact() {
       icon: Phone,
       label: t.contact.phoneLabel,
       value: t.footer.phone,
-      href: "tel:+15551234567",
+      href: "tel:+50935832268",
     },
     {
       icon: MapPin,

@@ -104,9 +104,9 @@ function ServiceCard({ card, Icon, index }) {
 
 
 
-      <button className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-slate-900 transition duration-300 group-hover:translate-x-2">
+      <a href="#contact" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-slate-900 transition duration-300 group-hover:translate-x-2">
 
-        Learn more
+        Create 
 
         <span className="text-base">
 
@@ -114,7 +114,7 @@ function ServiceCard({ card, Icon, index }) {
 
         </span>
 
-      </button>
+      </a>
 
 
 

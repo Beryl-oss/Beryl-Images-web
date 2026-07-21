@@ -9,6 +9,7 @@ import photo3Image from "../../assets/images/projects/projects-image/photo3.webp
 import photo4Image from "../../assets/images/projects/projects-image/photo4.webp";
 import photo5Image from "../../assets/images/projects/projects-image/photo5.webp";
 import photo6Image from "../../assets/images/projects/projects-image/photo6.webp";
+import formationImage from "../../assets/images/projects/projects-image/formation.webp";
 
 import jerryThumb from "../../assets/images/projects/projects-thumbnails/jerry.webp";
 import anderThumb from "../../assets/images/projects/projects-thumbnails/ander.webp";
@@ -21,6 +22,7 @@ import photo3Thumb from "../../assets/images/projects/projects-thumbnails/photo3
 import photo4Thumb from "../../assets/images/projects/projects-thumbnails/photo4.webp";
 import photo5Thumb from "../../assets/images/projects/projects-thumbnails/photo5.webp";
 import photo6Thumb from "../../assets/images/projects/projects-thumbnails/photo6.webp";
+import formationThumb from "../../assets/images/projects/projects-thumbnails/formation.webp";
 
 export const projects = [
   {
@@ -196,6 +198,22 @@ export const projects = [
     image: photo6Image,
     thumbnail: photo6Thumb,
     tools: ["Lightroom"],
+    link: "",
+  },
+
+  {
+    id: 12,
+    title: "Formation Pixora School",
+    category: "flyer",
+    type: "Advertising Design",
+    year: "2026",
+    client: "RJ Graphic",
+    featured: false,
+    description:
+      "Une conception minimaliste, conçue pour inciter des visiteurs à acheter la formation",
+    image: formationImage,
+    thumbnail: formationThumb,
+    tools: ["Canva"],
     link: "",
   },
 ];
