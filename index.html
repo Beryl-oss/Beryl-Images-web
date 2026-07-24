@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
 
   <!-- Responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
+  <!-- Primary SEO -->
   <title>Béryl Images | Designer Graphique & Développeur Web</title>
 
   <meta
     name="description"
-    content="Béryl Images est un studio créatif spécialisé dans le développement web, le design graphique, le branding et la création d'expériences numériques modernes."
-  />
-
-  <meta
-    name="keywords"
-    content="Béryl Images, portfolio, développeur web, web developer, designer graphique, branding, React, création de site web, identité visuelle"
+    content="Béryl Images crée des sites web modernes, des identités visuelles uniques et des designs digitaux professionnels pour les marques et entreprises."
   />
 
   <meta name="author" content="Massena Béryl" />
-  <meta name="theme-color" content="#eff6fb" />
 
-  <!-- Robots -->
   <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://berylimages.com/" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#eff6fb" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Béryl Images | Développeur Web & Designer Graphique" />
+  <meta property="og:url" content="https://berylimages.com/" />
+  <meta
+    property="og:title"
+    content="Béryl Images | Designer Graphique & Développeur Web"
+  />
   <meta
     property="og:description"
-    content="Développement web • Design graphique • Branding • Expériences numériques modernes."
+    content="Sites web modernes, branding, design graphique et expériences numériques créées par Béryl Images."
   />
-  <meta property="og:image" content="/preview.png" />
+  <meta property="og:image" content="https://berylimages.com/preview.png" />
+  <meta property="og:locale" content="fr_FR" />
 
-  <!-- Twitter -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Béryl Images | Designer Graphique & Développeur Web "
+    content="Béryl Images | Designer Graphique & Développeur Web"
   />
   <meta
     name="twitter:description"
-    content="Développement web • Design graphique • Branding • Expériences numériques modernes."
+    content="Création de sites web, branding et designs digitaux modernes."
   />
-  <meta name="twitter:image" content="/preview.png" />
+  <meta name="twitter:image" content="https://berylimages.com/preview.png" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
@@ -60,32 +64,35 @@
     rel="icon"
     type="image/svg+xml"
     href="/favicon-dark.svg"
-    media="(prefers-color-scheme: light)"
   />
 
   <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/favicon-light.svg"
-    media="(prefers-color-scheme: dark)"
+    rel="apple-touch-icon"
+    href="/favicon-dark.svg"
   />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-67835ZTTEQ"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-67835ZTTEQ');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+
+    gtag("config", "G-67835ZTTEQ");
   </script>
 
 </head>
 
 <body>
+
   <div id="root"></div>
 
   <script type="module" src="/src/main.jsx"></script>
-</body>
 
+</body>
 </html>
