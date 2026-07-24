@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { projects } from "./Portfolio/data";
 import { useLanguage } from "../context/LanguageContext";
 
-import PortfolioHeader from "./Portfolio/PortfolioHeader";
-import PortfolioFilters from "./Portfolio/PortfolioFilters";
-import ProjectGrid from "./Portfolio/ProjectGrid";
-import PortfolioModal from "./Portfolio/PortfolioModal";
+import { projects } from "./portfolio/Data";
+import PortfolioHeader from "./portfolio/PortfolioHeader";
+import PortfolioFilters from "./portfolio/PortfolioFilters";
+import ProjectGrid from "./portfolio/ProjectGrid";
+import PortfolioModal from "./portfolio/PortfolioModal";
 
 
 function Portfolio() {
