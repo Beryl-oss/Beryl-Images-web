@@ -9,7 +9,7 @@ export function getFooterSections(t) {
       links: [
         { label: t.footer.email, href: 'mailto:massenajonas256@gmail.com' },
         { label: t.footer.phone, href: 'tel:+509 3583-2268' },
-        { label: t.footer.address, href: '#contact' },
+        { label: t.footer.timezone, href: '#contact' },
       ],
     },
   ];

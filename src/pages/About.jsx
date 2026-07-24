@@ -153,9 +153,9 @@ function About() {
         </div>
 
         <div ref={contentRef} className="w-full flex-1 text-center sm:text-left">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#ff6d00]">
+          <span className="inline-flex rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm">
             {t.about.eyebrow}
-          </p>
+          </span>
 
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[#264653] sm:text-4xl lg:text-5xl">
             {t.about.heading}

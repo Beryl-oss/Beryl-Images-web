@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Clock, Phone } from "lucide-react";
 
 import { useLanguage } from "../context/LanguageContext";
 import ContactHero from "../components/contact/ContactHero";
@@ -100,9 +100,9 @@ function Contact() {
       href: "tel:+50935832268",
     },
     {
-      icon: MapPin,
-      label: t.contact.addressLabel,
-      value: t.footer.address,
+      icon: Clock,
+      label: t.contact.timezoneLabel,
+      value: t.footer.timezone,
       href: "#home",
     },
   ];

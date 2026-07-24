@@ -75,7 +75,7 @@ const translations = {
       contactTitle: 'Contact',
       email: 'massenajonas256@gmail.com',
       phone: '+509 3583-2268',
-      address: '123 Main St, Anytown',
+      timezone: 'UTC-4 (Haiti)',
       copyright: 'Tous droits réservés.',
       social: [
         { label: 'Instagram', href: 'https://www.instagram.com/beryl_images' },
@@ -89,7 +89,7 @@ const translations = {
         'Discutons de votre prochain projet et donnons vie à une expérience digitale mémorable.',
       emailLabel: 'Email',
       phoneLabel: 'Téléphone',
-      addressLabel: 'Adresse',
+      timezoneLabel: 'Fuseau Horaire',
       cta: 'Écrire un message',
       form: {
         name: "Votre nom",
@@ -329,7 +329,7 @@ const translations = {
       contactTitle: 'Contact',
       email: 'massenajonas256@gmail.com',
       phone: '+509 3583-2268',
-      address: '123 Main St, Anytown',
+      timezone: 'UTC-4 (Haiti)',
       copyright: 'All rights reserved.',
       social: [
         { label: 'Instagram', href: 'https://www.instagram.com/beryl_images' },
@@ -343,7 +343,7 @@ const translations = {
         'Let’s discuss your next project and bring a memorable digital experience to life.',
       emailLabel: 'Email',
       phoneLabel: 'Phone',
-      addressLabel: 'Address',
+      timezoneLabel: 'Timezone',
       cta: 'Write a message',
       form: {
         name: "Your name",

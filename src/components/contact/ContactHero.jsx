@@ -1,4 +1,5 @@
 import { Mail, X } from "lucide-react";
+import { trackEvent } from "../../lib/analytics";
 
 function ContactHero({ 
   title, 
@@ -8,6 +9,11 @@ function ContactHero({
   onOpenForm,
   isOpen
 }) {
+
+  const handleFormButtonClick = () => {
+      trackEvent("contact_form_click");
+      onOpenForm();
+    };
 
   return (
     <div className="max-w-2xl">
@@ -28,7 +34,7 @@ function ContactHero({
 
         {/* Bouton formulaire */}
         <button
-          onClick={onOpenForm}
+          onClick={handleFormButtonClick}
           className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-white to-slate-100 px-6 py-3 font-semibold text-slate-950 transition hover:bg-slate-100"
         >
           {isOpen ? (

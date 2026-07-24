@@ -62,10 +62,10 @@ function PortfolioHeader() {
 
       {/* Badge */}
 
-      <div className="portfolio-badge mb-6 inline-flex items-center rounded-full border border-[#356267]/10 bg-[#356267]/5 px-5 py-2 backdrop-blur-sm">
+      <div className="portfolio-badge">
 
-        <span className="text-xs font-semibold uppercase tracking-[0.35em] text-[#356267]">
-          {t.portfolio.eyebrow}
+        <span className="inline-flex rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm">
+            {t.portfolio.eyebrow}
         </span>
 
       </div>
