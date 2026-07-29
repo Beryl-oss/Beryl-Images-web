@@ -53,7 +53,7 @@ const translations = {
             'Affiches, branding, réseaux sociaux, supports imprimés et identités visuelles conçus pour marquer les esprits.',
         },
         {
-          title: 'Développement Web',
+          title: 'Web design',
           copy: 'Sites modernes et responsives construits avec React et Tailwind CSS.',
         },
         {
@@ -308,7 +308,7 @@ const translations = {
             'Posters, branding, social media, print materials and visual identities crafted to leave a lasting impression.',
         },
         {
-          title: 'Website Development',
+          title: 'Web Design',
           copy: 'Modern responsive websites built with React and Tailwind CSS.',
         },
         {
