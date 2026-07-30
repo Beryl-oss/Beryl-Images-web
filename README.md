@@ -1,16 +1,117 @@
-# React + Vite
+# 🎨 Béryl Images
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Creative portfolio built with **React**, **Vite**, **Tailwind CSS** and **GSAP**.
 
-Currently, two official plugins are available:
+Official website: **https://berylimages.com**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📖 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Béryl Images is a creative portfolio showcasing my work in:
 
-## Expanding the ESLint configuration
+- 🎨 Branding & Visual Identity
+- 🖌 Graphic Design
+- 📸 Portrait Photography
+- 💻 Modern Web Experiences
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The goal of this project is to provide an elegant, fast and immersive experience while highlighting creative work through smooth animations and a responsive interface.
+
+---
+
+## ✨ Features
+
+- ⚡ Powered by Vite
+- ⚛ React 19
+- 🎨 Tailwind CSS
+- 🎬 GSAP animations
+- 🌍 Responsive Design
+- 🌙 Theme-aware favicon
+- 🔍 SEO optimized
+- 📱 Mobile-first experience
+- 📩 Contact form integration
+- 🚀 Performance optimized
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| React | UI |
+| Vite | Build Tool |
+| Tailwind CSS | Styling |
+| GSAP | Animations |
+| React Router | Routing |
+| Formspree | Contact Form |
+| Google Analytics | Analytics |
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── assets/
+├── components/
+├── hooks/
+├── pages/
+├── routes/
+├── utils/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Beryl-oss/beryl-images-web.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## 🌐 Live Website
+
+https://berylimages.com
+
+---
+
+## 📷 Preview
+
+![Béryl Images Preview](/preview.png)
+
+---
+
+## 📄 License
+
+This project is the property of **Béryl Masséna**.
+
+© 2026 Massena Béryl. All rights reserved.
