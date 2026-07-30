@@ -106,7 +106,7 @@ https://berylimages.com
 
 ## 📷 Preview
 
-![Béryl Images Preview](/preview.png)
+![Béryl Images Preview](./preview.png)
 
 ---
 
