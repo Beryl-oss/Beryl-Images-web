@@ -54,12 +54,16 @@ The goal of this project is to provide an elegant, fast and immersive experience
 src/
 ├── assets/
 ├── components/
+├── context/
 ├── hooks/
+├── layouts/
+├── lib/
 ├── pages/
 ├── routes/
-├── utils/
 ├── App.jsx
+├── App.css
 └── main.jsx
+├── index.css
 ```
 
 ---
@@ -106,7 +110,7 @@ https://berylimages.com
 
 ## 📷 Preview
 
-![Béryl Images Preview](./preview.png)
+![Béryl Images Preview](./public/preview.png)
 
 ---
 
