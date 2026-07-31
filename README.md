@@ -62,8 +62,8 @@ src/
 ├── routes/
 ├── App.jsx
 ├── App.css
-└── main.jsx
-├── index.css
+├── main.jsx
+└── index.css
 ```
 
 ---
