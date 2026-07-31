@@ -33,7 +33,7 @@ function ProjectCard({ project, setSelectedProject }) {
 
         <img
           loading="lazy"
-          src={project.thumbnail}
+          src={project.thumbnail ?? project.image}
           alt={project.title}
           className="
             h-full

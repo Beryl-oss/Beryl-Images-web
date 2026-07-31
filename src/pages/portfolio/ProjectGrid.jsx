@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -14,7 +14,7 @@ function ProjectGrid({
   const gridRef = useRef(null);
 
 
-  useEffect(() => {
+  useLayoutEffect(() => {
 
   const ctx = gsap.context(() => {
 
@@ -40,9 +40,9 @@ function ProjectGrid({
 
       duration: 0.9,
 
-      stagger: {
-        each: 0.15,
-        from: "start",
+      stagger:{
+        each:0.08,
+        from:"start"
       },
 
       ease: "power3.out",
@@ -50,7 +50,7 @@ function ProjectGrid({
       scrollTrigger: {
         trigger: gridRef.current,
         start: "top 80%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play none none",
       },
 
     });
@@ -60,7 +60,7 @@ function ProjectGrid({
 
 
   return () => ctx.revert();
-  }, [projects]);
+  }, []);
 
 
 

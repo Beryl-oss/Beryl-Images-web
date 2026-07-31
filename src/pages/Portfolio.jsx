@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
 import { projects } from "./portfolio/Data";
 import PortfolioHeader from "./portfolio/PortfolioHeader";
 import PortfolioFilters from "./portfolio/PortfolioFilters";
 import ProjectGrid from "./portfolio/ProjectGrid";
-import PortfolioModal from "./portfolio/PortfolioModal";
+import Modal from "../ui/Modal";
+import PortfolioModalContent from "./portfolio/PortfolioModalContent";
 
 
 function Portfolio() {
@@ -19,19 +20,22 @@ function Portfolio() {
 
   // Fusion des données techniques + traductions
 
-  const translatedProjects = projects.map((project) => {
+  const translatedProjects = useMemo(() => {
 
-    const translation = t.portfolio.projects.find(
-      (item) => item.id === project.id
-    );
+    return projects.map((project)=>{
 
+      const translation = t.portfolio.projects.find(
+        (item)=>item.id===project.id
+      );
 
-    return {
-      ...project,
-      ...translation,
-    };
+      return {
+        ...project,
+        ...translation
+      };
 
-  });
+    });
+
+  }, [t.portfolio.projects]);
 
 
 
@@ -143,10 +147,16 @@ function Portfolio() {
 
 
         {selectedProject && (
-            <PortfolioModal
-                selectedProject={selectedProject}
-                setSelectedProject={setSelectedProject}
-            />
+            <Modal
+    isOpen={!!selectedProject}
+    onClose={() => setSelectedProject(null)}
+>
+
+    <PortfolioModalContent
+        project={selectedProject}
+    />
+
+</Modal>
         )}
 
 

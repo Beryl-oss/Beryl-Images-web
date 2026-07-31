@@ -1,92 +1,104 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import heroPic from "../../assets/images/Beryl_IMG2.webp";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function HeroImage() {
   const containerRef = useRef(null);
-  const floatRef = useRef(null);
+  const glassRef = useRef(null);
+  const glowRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+
       gsap.fromTo(
         containerRef.current,
         {
           opacity: 0,
-          x: 80,
-          scale: 0.94,
-          rotate: 2,
+          y: 50,
+          x: 70,
+          scale: 0.92,
+          rotate: 3,
+          filter: "blur(10px)",
         },
         {
           opacity: 1,
+          y: 0,
           x: 0,
           scale: 1,
           rotate: 0,
-          duration: 1.2,
+          filter: "blur(0px)",
+          duration: 1.4,
           ease: "power4.out",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 85%",
-            toggleActions: "play none none none",
-          },
         }
       );
 
-      gsap.to(floatRef.current, {
-        y: -12,
-        duration: 3,
+
+      gsap.to(glassRef.current, {
+        y: -14,
+        duration: 4.5,
         repeat: -1,
         yoyo: true,
         ease: "sine.inOut",
       });
 
-      gsap.to(containerRef.current, {
-        yPercent: -5,
-        ease: "none",
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
-        },
+
+      gsap.to(glowRef.current, {
+        scale: 1.15,
+        opacity: 0.75,
+        duration: 5,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
       });
+
+
     }, containerRef);
 
+
     return () => ctx.revert();
+
   }, []);
 
+
   return (
-    <div className="relative flex w-full items-center justify-center lg:justify-end">
+    <div ref={containerRef} className="relative flex items-center justify-center will-change-transform">
 
-      <div className="absolute inset-x-4 bottom-4 h-24 rounded-full bg-[#356267]/10 blur-3xl sm:inset-x-6 sm:h-32 lg:bottom-6" />
 
-      <div className="absolute left-4 top-4 h-16 w-16 rounded-full bg-[#ff6d00]/10 blur-2xl sm:h-20 sm:w-20" />
+      {/* Studio glow */}
+      <div ref={glowRef} className="absolute inset-0 -z-10 rounded-full bg-[#356267]/20 blur-[100px] sm:blur-[140px]" />
 
-      <div ref={containerRef} className="will-change-transform">
 
-        <div
-          ref={floatRef}
-          className="group relative z-10 w-full max-w-[280px] rounded-[32px] border border-white/80 bg-gradient-to-br from-[#f8fdfd] via-white to-[#eaf7f7] p-2 shadow-[0_25px_70px_rgba(41,78,86,0.18)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_90px_rgba(41,78,86,0.22)] sm:max-w-[360px] sm:p-3 md:max-w-[420px] md:p-4 lg:max-w-[500px] xl:max-w-[620px]"
-        >
+      {/* Orange signature light */}
+      <div className="absolute -right-10 top-16 -z-10 h-36 w-36 rounded-full bg-[#ff6d00]/20 blur-[80px]" />
 
-          <div className="relative overflow-hidden rounded-[26px] border border-[#356267]/10 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.95),_rgba(214,242,242,0.55)_35%,_rgba(53,98,103,0.12)_100%)]">
 
-            <img
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              src={heroPic}
-              alt="Portrait de Beryl"
-              className="relative z-10 h-auto w-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
-            />
+      {/* Glass frame */}
+      <div ref={glassRef} className="group relative w-full max-w-[300px] rounded-[42px] border border-white/70 bg-gradient-to-br from-[#f8fdfd]/90 via-white/80 to-[#eaf7f7]/70 p-3 shadow-[0_40px_120px_rgba(53,98,103,0.22)] backdrop-blur-xl sm:max-w-[380px] sm:p-4 md:max-w-[480px] lg:max-w-[560px] xl:max-w-[640px]">
 
-          </div>
+
+        {/* Inner frame */}
+        <div className="relative overflow-hidden rounded-[32px] border border-[#356267]/10 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.95),_rgba(214,242,242,0.55)_35%,_rgba(53,98,103,0.12)_100%)]">
+
+
+          <img
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            src={heroPic}
+            alt="Portrait de Beryl"
+            className="relative z-10 h-auto w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          />
+
+
+          {/* Glass reflection */}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/30 via-transparent to-white/10 opacity-60" />
+
 
         </div>
 
+
       </div>
+
 
     </div>
   );

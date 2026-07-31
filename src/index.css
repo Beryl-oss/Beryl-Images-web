@@ -25,6 +25,28 @@
   animation: spin-in 0.3s ease-out;
 }
 
+@keyframes scrollLine {
+
+  0%{
+    transform:translate(-50%,-100%);
+    opacity:0;
+  }
+
+  25%{
+    opacity:1;
+  }
+
+  75%{
+    opacity:1;
+  }
+
+  100%{
+    transform:translate(-50%,320%);
+    opacity:0;
+  }
+
+}
+
 
 /* =========================
    Global Styles

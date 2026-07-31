@@ -20,9 +20,9 @@ const translations = {
     },
     hero: {
       badge: 'Masséna Béryl',
-      titleLines: ['Des expériences', 'web sobres qui', 'mettent votre', 'projet en valeur'],
+      titleLines: ['Des expériences', 'numériques qui', 'marquent les', 'esprits'],
       description:
-        'Je conçois des interfaces modernes, rapides et élégantes pour aider les entreprises et les créateurs à transformer leurs visiteurs en clients.',
+        'Nous imaginons des sites web et des identités visuelles où chaque interaction est pensée avec intention. Un design sobre, une exécution précise et une stratégie claire pour faire grandir votre marque.',
       ctaPrimary: 'Voir mes projets',
       ctaSecondary: 'En savoir plus',
     },
@@ -275,9 +275,9 @@ const translations = {
     },
     hero: {
       badge: 'Masséna Béryl',
-      titleLines: ['Designing', 'digital experiences', 'that make', 'your brand stand out'],
+      titleLines: ['Designing', 'digital experiences', 'that leave', 'a lasting impression'],
       description:
-        'I craft modern, fast and elegant interfaces to help businesses and creators turn visitors into clients.',
+        'We create websites and visual identities where every interaction is intentional. Clean design, precise execution and strategic thinking to help your brand grow.',
       ctaPrimary: 'See my projects',
       ctaSecondary: 'Learn more',
     },

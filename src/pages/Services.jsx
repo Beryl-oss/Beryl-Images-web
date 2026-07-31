@@ -1,6 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
-import { ServiceHero, ServiceCard, ServiceModal, ServiceMobileGallery, serviceIcons, previews } from "./services/index";
+import {
+  ServiceHero,
+  ServiceCard,
+  ServiceMobileGallery,
+  ServiceModalContent,
+  serviceIcons,
+  previews
+} from "./services/index";
+import Modal from "../ui/Modal";
 
 function Services() {
   const { t } = useLanguage();
@@ -8,18 +16,6 @@ function Services() {
   const [showGallery, setShowGallery] = useState(false);
   const [heroCard, ...cards] = t.services.cards;
 
-  useEffect(() => {
-    const handleEscape = (event) => {
-      if (event.key === "Escape") {
-        setSelectedPreview(null);
-      }
-    };
-
-    window.addEventListener("keydown", handleEscape);
-    return () => {
-      window.removeEventListener("keydown", handleEscape);
-    };
-  }, []);
 
   // GSAP animations removed from services section (kept minimal/static)
 
@@ -61,7 +57,15 @@ function Services() {
         </div>
       </div>
 
-      <ServiceModal selectedPreview={selectedPreview} setSelectedPreview={setSelectedPreview} />
+      <Modal
+          isOpen={!!selectedPreview}
+          onClose={() => setSelectedPreview(null)}
+      >
+          <ServiceModalContent
+              preview={selectedPreview}
+          />
+      </Modal>
+      
       {showGallery && (
         <ServiceMobileGallery previews={previews} setSelectedPreview={setSelectedPreview} setShowGallery={setShowGallery} />
       )}

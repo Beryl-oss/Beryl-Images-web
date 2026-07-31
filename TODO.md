@@ -1,19 +1,21 @@
 # TODO - Portfolio V1.0
 > Béryl Images Portfolio
-> Status : In Development
+
+> Status : Deployed
+
 > Version cible : v2.0
 
 ---
 
 ## ✨ Design
 
-- [ ] Améliorer encore le Hero
+- [x] Améliorer encore le Hero
 - [ ] Rendre les animations plus fluides
-- [ ] Ajouter des micro-interactions sur tous les boutons
+- [x] Ajouter des micro-interactions sur tous les boutons
 - [ ] Uniformiser les espacements
-- [ ] Revoir quelques effets de lumière
-- [ ] Ajouter davantage de profondeur au design
-- [ ] Ajouter la capsule Navbar qu'après un scroll de 50 px
+- [x] Revoir quelques effets de lumière
+- [x] Ajouter davantage de profondeur au design
+- [x] Ajouter la capsule Navbar qu'après un scroll de 50 px
 ---
 
 ## 📱 Responsive
@@ -27,7 +29,7 @@
 ## 🎨 Portfolio
 
 - [ ] Ajouter les nouveaux projets clients
-- [ ] Ajouter l'ancien portfolio comme archive historique
+- [x] Ajouter l'ancien portfolio comme archive historique
 - [ ] Ajouter davantage de captures pour chaque projet
 - [ ] Ajouter le temps de réalisation
 - [ ] Ajouter les technologies utilisées
@@ -107,7 +109,3 @@
 - [ ] Android
 
 ---
-
-# Version cible
-
-v1.1.0
