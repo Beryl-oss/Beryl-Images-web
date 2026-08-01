@@ -105,7 +105,7 @@ return()=>ctx.revert();
 
 return(
 
-<section ref={sectionRef} className="relative overflow-hidden px-6 py-28 sm:px-10 lg:px-12">
+<section id="about" ref={sectionRef} className="relative overflow-hidden px-6 py-28 sm:px-10 lg:px-12">
 
 <div className="mx-auto flex max-w-7xl flex-col items-center gap-16 lg:flex-row lg:gap-20">
 
@@ -280,7 +280,7 @@ Design · Code · Vision
 
 
 
-<a href="#contact" className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#264653] px-8 py-3.5 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#1d3740] hover:shadow-xl">
+<a href="#contact" className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#264653] px-8 py-3.5 font-semibold text-white transition-[transform,box-shadow,background-color] duration-300 ease-out hover:-translate-y-1 hover:bg-[#1d3740] hover:shadow-xl">
 
 {t.about.button}
 
