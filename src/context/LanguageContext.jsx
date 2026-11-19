@@ -4,7 +4,7 @@ const LanguageContext = createContext(null);
 
 const translations = {
 
-  /* Français */
+  /* Français */ 
 
   fr: {
     nav: {
@@ -73,8 +73,8 @@ const translations = {
       brandText: 'Des systèmes de design élégants, des interfaces réfléchies et une présence digitale pensée pour la croissance.',
       navigationTitle: 'Navigation',
       contactTitle: 'Contact',
-      email: 'massenajonas256@gmail.com',
-      phone: '+509 3583-2268',
+      email: 'berylimages26@gmail.com',
+      phone: '+509 5818-4452',
       timezone: 'UTC-4 (Haiti)',
       copyright: 'Tous droits réservés.',
       social: [
@@ -327,8 +327,8 @@ const translations = {
       brandText: 'Elegant design systems, thoughtful interfaces, and a digital presence tailored for growth.',
       navigationTitle: 'Navigate',
       contactTitle: 'Contact',
-      email: 'massenajonas256@gmail.com',
-      phone: '+509 3583-2268',
+      email: 'berylimages26@gmail.com',
+      phone: '+509 5818-4452',
       timezone: 'UTC-4 (Haiti)',
       copyright: 'All rights reserved.',
       social: [
